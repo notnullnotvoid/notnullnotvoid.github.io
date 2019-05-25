@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>116 Bugs in 12 Days</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: font-family: 'Roboto', sans-serif;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>116 Bugs in 16 Days</h1>
+        <p>In Jon Blow's most recent talk, he spends <a href="https://youtu.be/pW-SOdj4Kkk?t=1360">a section</a> talking about various bugs he catalogued over the course of a few days. It reminded me that a while ago, in March of last year, I similarly decided to try writing down every single bug I came across during normal computer use for a month. I gave up on day 13, in the middle of a vacation, but not before documenting 116 (!) unique bugs. I meant to publish them at some point, but never got around to it, so I'm posting the list now while it's at hopefully least a little bit topical.</p>
+        <p>Note that I wrote down bugs as I encountered them, so this list doesn't include bugs that I knew about but happened not to run into during the time period when I was writing them down. I'm willing to bet there are a few I didn't think to write down because I'm so used to working around them that they don't register anymore. There are also bound to be many bugs I don't run into only because I had already changed my workflow to avoid them. And I'm pretty sure there were a couple I forgot to write down because they happened *while I was writing down other bugs*. Several of the bugs, especially during the first few days, are long-standing problems I have to deal with on a near-daily basis.</p>
+        <p>Here is the full list, unmodified from when it was written:</p>
+        <ol>
+            <p>March 1 (thursday)</p>
+                <li>some images (but not others) take absurdly long to load on android twitter app, even on a good connection. doesn't happen on web, so it's not just twitter's servers being slow</li>
+                <li>frequently, preview images don't load in twitter app but full images do</li>
+                <li>when twitter images are loading in app, the progress bar gets partway across the screen, then disappears, and the loading icon (that little crossed eye thing) flickers rapidly and seemingly at random</li>
+                <li>twitter app shows "in case you missed it" for things I have definitely already seen</li>
+                <li>twitter app shows notification, but when notifications tab is checked, nothing new is there</li>
+                <li>android phone (LG G3 running 6.0) sometimes fails to adjust screen brightness in sunlight, making screen impossible to see</li>
+                <li>firefox focus erased browsing in the middle of session for no apparent reason</li>
+                <li>"pretend to be an Xbox controller" option in Xbox gamepad section of system preferences is not remembered if controller is reconnected (it must be manually set every time)</li>
+                <li>a nondescript error box popped up from my desktop with a java update logo, a header "Insecure update error!" and the text "For security reasons, you need to sign your updates with a DSA key. See Sparkle's documentation for more information." I really have no idea what's going on with this one.</li>
+                <li>trying to copy the error message out of the aforementioned message box did not work, and played the OSX generic error sound</li>
+                <li>quitting Transmission from the dock right-click menu doesn't give the application focus like it's supposed to</li>
+                <li>sublime text flashes wildly while loading on windows 10 (thankfully it only lasts a fraction of a second and is just a minor graphical glitch)</li>
+                <li>notepad.exe still does not handle non-CRLF line endings in windows 10 in the year of our lord 2018!</li>
+                <li>right clicking on the boot camp tray icon in windows 10, selecting "Restart in OS X", and clicking OK on the confirmation dialog results in an error dialog: "Could not locate the OS X boot volume."</li>
+                <li>could not copy text from aforementioned windows error message box</li>
+                <li>cursor occasionally becomes briefly unresponsive to mouse input in sublime text in windows 10</li>
+                <li>when restarting OS X, some previously open applications are not reopened</li>
+                <li>of those that are reopened, some are opened on the correct desktop, but most are not</li>
+                <li>fingerprint recognition in iOS is very inconsistent</li>
+                <li>sometimes, when fingerprint recognition fails, it asks for my password. other times, it tells me to try again. it's not clear what makes the difference</li>
+                <li>occasionally, it asks for my password without even attempting fingerprint recognition. it's not clear what causes this, either</li>
+            <p>March 2 (friday)</p>
+                <li>if an application exits while visible in "mission control" view (in OSX), the contents of the window disappear but sometimes mission control still acts like the window is still there</li>
+                <li>on the twitch page that lists the accounts a given person is following, each card has options for "Add Friend", "Follow", and "Whisper", but nothing that functions as a link to that person's twitch page!</li>
+                <li>when loading the aforementioned twitch page, the browser locked up and the mouse cursor flickered wildly for several seconds</li>
+                <li>looking at lots of images using quicklook (and maybe some other things as well) cause the entire windowing system to slow to a crawl and eventually crash. occasionally whatever process is associated with the windowing system will die and be restarted, but most of the time the whole system just visually soft-locks and must be force-restarted manually</li>
+            <p>March 3 (saturday)</p>
+                <li>sometimes, clicking into a finder windows (thereby giving it focus) that has a file selected makes the containing folder the selected item, and other times does nothing</li>
+            <p>March 4 (sunday)</p>
+                <li>OSX spotlight picks results before it's finished generating them, so you might launch the wrong thing if you hit enter too soon after typing</li>
+                <li>spotlight also gives nonsense results for some things, e.g. if you type "xcod" you get xcode.app as the first result, but if you finish typing "xcode" you get "xcode server builder"!</li>
+                <li>when my phone is low on battery (&lt= 5%) it turns down the screen brightness automatically, and sometimes fails to return to normal behavior once it's recharged, so I have to change it back manually by unchecking and re-checking the "auto" brightness option</li>
+                <li>twitter notification shows 3 notifications, but in app and app icon show only 1</li>
+                <li>sometimes, youtube videos started in inactive tabs begin playing when the tab becomes active, but other times they don't and must be manually started</li>
+                <li>soundcloud shows notification for something I already got a notification for a long time ago</li>
+                <li>soundcloud DM notifications are not links (and therefore cannot be opened in a new tab)</li>
+                <li>when scrolling through the list of a channel's youtube videos, the overlay info (video length and percent watched) take a long time to come up after the thumbnail and other info has already loaded</li>
+                <li>the preview image for a youtube video that failed to autoplay disappeared and then reappeared when switching to the desktop it was in (none of the rest of the webpage reloaded)</li>
+                <li>Opera doesn't respect cmd+q, despite showing it in the application menu</li>
+                <li>processing editor cursor behavior results in reverse of expected result of cmd+left and cmd+right when cursor is in the middle of a whitespace-only line</li>
+                <li>iOS firefox video player dies after initial load for some videos</li>
+                <li>iOS firefox back button doesn't consistently work</li>
+                <li>twitch home page snaps back to the top of the page at random intervals while I'm trying to scroll down</li>
+                <li>moving files around on the dektop (OSX) sometimes spews them randomly to different places instead</li>
+                <li>OSX doesn't allow moving files to certain spots in desktop grid, even though they are clearly empty, even after turning grid snapping off and back on again (there is no reliable fix for this that I know of)</li>
+                <li>visiting the twitter notifications tab and looking at the notification doesn't make the notification go away! argh!</li>
+            <p>March 5 (monday)</p>
+                <li>the Diablo 2 launcher no longer works on my old PC, even though - as far as I know - nothing has changed since it used to work just fine. Now I have to launch game.exe directly instead of running the launcher (yes, I have the latest patch)</li>
+                <li>the game can no longer read the old save files, although hero editor still can...</li>
+                <li>...but only if *not* ran as administrator?!?</li>
+                <li>even the windows file explorer doesn't know the files are there, despite having the options to show hidden files and system files both turned on! (I can't touch them with command line tools, either)</li>
+                <li>the game occasionally randomly minimizes to desktop for no discernable reason</li>
+                <li>the version of discord installed on that old PC gets stuck on the loading screen forever if there's no internet connection, and provides no canonical way to exit, so it must be killed via process explorer</li>
+                <li>my old PC attempts to do a disk check every time it starts up, but the disk check must be skipped because it gets stuck indefinitely partway through the check otherwise (at the same place every time)</li>
+            <p>March 6 (tuesday)</p>
+                <li>firefox focus (android) terminates browsing session immediately when disconnected from wifi, instead of switching to mobile data</li>
+                <li>accuweather mobile site layout changes suddenly a few seconds after loading, making attempts to tap one link miss and end up tapping a different link instead</li>
+                <li>some random partially transparent thing flashed up on the bottom half of the screen for a moment while I was using firefox, I have no idea what it was</li>
+                <li>pinch-to-zoom on a twitter image takes a while to work and is unreasonably slow for some reason (even though the image is definitely not that high res)</li>
+                <li>dismissing a notification in the twitter app does not dismiss it on web, even though it definitely should</li>
+                <li>battery percentage shown in notification and battery percentage shown in status bar do not match (android)</li>
+                <li>twitter shows favs ("likes") of people you follow on your timeline as well as retweets, defeating the entire point of the distinction (yes, this is a clear-cut UX bug, whether it is intentional or not)</li>
+                <li>twitter loads the full version of an image, but then unloads it as soon as I try to zoom in!</li>
+            <p>March 7 (wednesday)</p>
+                <li>youtube video gets stuck buffering endlessly, but loads ahead immediately upon refreshing the page</li>
+                <li>having two unaligned monitors causes the ctrl+scroll zoom feature in OSX to not allow mouse movement to move the viewport correctly (I think because it's incorrectly testing the edges of the overall bounding rectangle to determine how the viewport should move, rather than the bounding rectangle of each individual screen)</li>
+                <li>ctrl+scroll to zoom in, move the mouse, and then zoom back out, causes the cursor position to move back and forth as you switch between zoomed and unzoomed</li>
+            <p>March 8 (thursday)</p>
+                <li>youtube doesn't let you input a custom timestamp for the share link unless the video is stopped (if it's playing, it lets you type into the box, but keeps resetting it every second)</li>
+                <li>quassel link mouse-over preview doesn't work - shows a black rectangle where the preview's supposed to be, and glitches out as you mouse over that rectangle</li>
+                <li>youtube video playback (on website) is freezing periodically, even though the video has buffered far ahead</li>
+                <li>youtube video playback periodically freezes indefinitely in android youtube app (while audio continues playing) when playing at >1x speed, despite being buffered ahead. only known fix is to close and reopen the app (this happened on a previous day but writing down the previous bug made me realize I never wrote it down)</li>
+                <li>twitter preview image loads, then unloads when I tap to see the full image, then has to load again after I back out! argh!</li>
+                <li>OSX does weird things with the size and placement of finder windows (I think because the simulated screen resolution is *very slightly* lower when the second monitor is connected for some reason? but I'm not sure)</li>
+                <li>desktop-related operations (e.g. mission control, exposé, switching between desktops, etc.) seem to consistently briefly lock up or slow down sometimes while on integrated graphics, but seem perfectly responsive other times</li>
+                <li>opening a file in quicklook, going into mission control view, switching to another space, and then selecting the quicklook pane causes OSX to get confused and pass focus back and forth between the quicklook pane and </li>whatever's behind it
+                <li>deleting messages in telegram desktop only makes them inaccessible for the user who deletes them</li>
+                <li>telegram mobile app has "delete message for all members" option, but it's a checkbox, and if you fail to check it when deleting the message, you can no longer interact with it, and therefore are no longer able to delete it for real</li>
+                <li>...except the "delete message for all members" function doesn't actually work anyway!</li>
+                <li>sublime text froze briefly (several seconds) for no discernable reason</li>
+                <li>when switching between desktops (OSX), a portion of the left side of the screen got stuck displaying part of an old frame for a couple seconds</li>
+                <li>switching accounts in the twitter app sometimes causes you to lose your place in your feed, and other times it doesn't</li>
+                <li>twitter thread permalink page changes layout seconds after loading, causing misclicks</li>
+                <li>itunes shows ipad as being connected when it most definitely isn't</li>
+                <li>hitting the "eject" button for the ipad causes a modal dialogue box to pop up with a fake progress bar that sticks around for over a minute before finally doing the thing you told it to do</li>
+                <li>scrolling straight up caused firefox to go back a page</li>
+            <p>March 9 (friday)</p>
+                <li>beginning a large file transfer (OSX) then opening something in quicklook before the progress bar window shows up for the transfer causes quicklook to get confused about what it's looking at, and closing quicklook then causes the transfer to be cancelled</li>
+                <li>quassel's broken link preview sticks around when it shouldn't and cannot easily be dismissed</li>
+                <li>was at top of twitter feed (in android twitter app). new posts loaded in. for several seconds afterward, scrolling up still caused that android loading spinner thing to come in from top of frame, even though I was not anywhere near the top of the feed anymore</li>
+                <li>android twitter app briefly flashes number 14 beside notification bell icon once while on timeline view, then again after switching to notifications tab, where I in fact had *no new notifications*, let alone 14!</li>
+                <li>android twitter loads an image, then unloads it, then gets stuck and isn't able to load it the second time. seriously!?</li>
+                <li>android twitter gives spurious "Image could not be saved." errors for no discernable reason on some images</li>
+                <li>android twitter sometimes lags out and misregisters drags as taps, leading to the app taking unintended actions on behalf of the user</li>
+                <li>after a tweet got fav'd by the previous bug, it took several taps to un-fav it (the first several caused it to briefly un-fav'd but then revert almost immediately)</li>
+                <li>when viewing someone's media page on android twitter, opening up any specific image shows the warning: "This media is not available because it includes content you've chosen not to see." underneath the post - despite the fact that it *is* showing me the media, *and* that I've specifically disabled the filter setting associated with that warning!</li>
+                <li>itunes does a cd-skip-esque repeat at the beginning of a song (minor audio glitch)</li>
+                <li>twitter app fails to remove tweets from the timeline view once it knows they've been deleted</li>
+                <li>I woke up my old win7 PC and the taskbar is now totally fucked up for no discernable reason, even though it was fine last time and I haven't touched it since</li>
+                <li>Diablo II keeps freezing a whole bunch in certain areas in act 5 - keep in mind this is a game from 2001 running on a computer from 2011</li>
+                <li>I won't list all the minor gameplay bugs in D2 here, because that would take several pages, and given that the game is 17 years old, I don't think it's relevant to the purpose of this list, which is to shed a light on the state of *modern* software. Instead, I'll just note here that it's a buggy mess overall<sup><a id="return1" href="#footnote1">[1]</a></sup></li>
+                <li>D2 keeps throwing up warnings about unhandled exceptions</li>
+                <li>the game freezes when this happens, and must be minimized in order to dismiss the error dialog</li>
+                <li>the cursor disappears when hovering over the error dialog, making it difficult to dismiss</li>
+                <li>D2 eventually crashed to desktop</li>
+                <li>the game now runs via the launcher (it didn't before, and I don't know of anything that's changed), but when running in software-rendered mode (set via the video test exe), the color palette is badly broken</li>
+                <li>a certain login system says that it is sending a confirmation code to the provided email, except I didn't provide an email, I provided a phone number, which is where the code was sent</li>
+            <p>March 10 (saturday)</p>
+                <li>in mission control view desktop list (OSX), the X (close) button for a desktop fails to come up sometimes on hover</li>
+                <li>android twitter: tapping an image sometimes opens the tweet, not the image</li>
+                <li>android twitter frequently fails to recognize sideways swipe</li>
+                <li>ghost channel shows up in quassel underneath the real channel</li>
+                <li>handmade dev show annotations for the second episode don't update while the video is playing, only while it's paused (other episodes seem to work just fine)</li>
+                <li>web twitter image box failed to switch to next image when clicking right arrow (I had to switch back to the previous image and then hit the right arrow again to get it to load)</li>
+            <p>March 11 (sunday)</p>
+                <li>hitting cmd+a to select all text in a text input box in firefox failed the first time</li>
+                <li>hitting the browser's back button (or scrolling to go back a page) quickly after opening an email in gmail (web client, firefox) causes gmail to fail to load the inbox</li>
+                <li>switching display to a lower resolution (OSX) causes items on desktop to be incorrectly positioned, even though they all fit within the smaller screen</li>
+                <li>OBS doesn't repaint the scenes list or sources list upon removing a scene</li>
+                <li>audacity starts up behind other applications</li>
+                <li>trying to start recording in OBS to a filesystem location that doesn't exist causes the appearance of the button to get stuck</li>
+                <li>itunes gives a spurious warning about not being able to sync a missing file to a device every time I open it, even though the device is not connected</li>
+            <p>March 12 (monday)</p>
+                <li>telegram incorrectly spaces out phone numbers</li>
+            <p>March 13 (tuesday)</p>
+                <li>android twitter shows two consecutive tweets from the same thread, but puts the "show this thread" thing in between them</li>
+                <li>android fails to show wifi login page when joining account-protected network the first several times I connect</li>
+                <li>android twitter "save" option in image view dropdown menu does nothing once when dropdown is opened. I had to open it again</li>
+        </ol>
+        <p>Reading back through this, here are my conclusions:</p>
+        <ul>
+            <li>A few programs are responsible for a large portion of the bugs, and they're not made by individuals or small teams - twitter, macos, windows, android, iOS, and youtube are all hugely over-represented despite having by far the most development resources at their disposal.</li>
+            <li>Some teams are much better at dealing with bug reports than others. On one end, the two sublime text bug reports I've submitted were fixed relatively quickly, although the release cycle meant it took a while to get to users. On the other end, apple provides no way that I could find to report (let alone track) bugs in any of their software.</li>
+            <li>Bugs tend not to get fixed. A large portion of the bugs reported here are confirmed still broken more than a year later, including some real show-stoppers. Most of the OS bugs, including the quicklook display server softlock bug, are still here multiple major OS versions later. Notepad mishandling line endings has been a notorious bug for well over a decade! And of course, there are countless new bugs since this list was made that I regularly have to deal with.</li>
+            <li>Doing this makes it crystal-clear why the common open-source<sup><a id="return2" rel="footnote" href="#footnote2">[2]</a></sup> arguments "if you find a bug in the software, you should fix it yourself", and "how can you complain that the software is buggy if you don't even file bug reports", are nonsense. If I filed bug reports for all the bugs I encounter, I would spend most of every day filing bug reports. Jumping into totally unfamiliar codebases every day and actually *fixing* even a fraction of the bugs I come across? I would never be able to get anything done. Open source is great, don't get me wrong, but if we want software to be less terrible, the charity of random software samaritans isn't going to cut it. Something has to change, culturally and/or structurally, about how we make software.</li>
+        </ul>
+        <hr>
+        <ol>
+            <li id="footnote1">I also didn't write down bugs from several game jam entries I played during the month, for obvious reasons.<sup><a href="#return1">[return]</a></sup></li>
+            <li id="footnote2">If you're reading this and thinking "that's because you're using proprietary software. if you used open-source alternatives, where anyone can contribute fixes, you wouldn't have so many problems", I'm sorry. The reason I don't use very much open-source software is because of how few of the programs I use have viable open-source alternatives, and because of how buggy many of those alternatives are.<sup><a href="#return2">[return]</a></sup></li>
+        </ol>
+    </body>
+</html>
